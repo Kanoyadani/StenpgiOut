@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:wght@700&family=Noto+Sans+NKo+Unjoined:wght@500&family=Young+Serif&display=swap');
+
+body{
+  margin: 0px;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+#tudo{
+  display: flex;
+  flex-direction: row;
+  height: 135vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+#header{
+  position: fixed;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  top: 0; 
+  left: 0; 
+  width: 100%;
+  height:5em;
+  background-color: #ffe6f5;
+  z-index: 2;
+}
+
+#header_1{
+  display: flex;
+  justify-content: flex-start;
+  width: 4em;
+}
+
+#header_3{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilo para a barra lateral */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Inicialmente oculta */
+  background-color: #f3bfde;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 10;
+}
+
+/* Estilo para o botão */
+#open-sidebar {
+  margin-left: 6px;
+  size: 100px;
+  left: 10px;
+  top: 10px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  z-index: 50; /* Garante que o botão esteja acima da barra lateral */
+}
+
+#sidebar-content{
+  margin-left: 10em;
+}
+
+#open-sidebar img {
+  width: 4em; 
+  height: 4em;
+}
+
+#sidebar_titulo{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.sidebar_marcas{
+  font-family: 'Young Serif', serif;
+  color: #ffffff;
+}
+
+#cart{
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#cart_img {
+  width: 4em;
+  height: auto;
+}
+
+
+.titulo{
+  font-family: 'Young Serif', serif;
+  font-size: 70px;
+}
+
+
+#logo{
+  height: auto;
+  max-width: 17em;
+}
+
+/* AD SLIDE */
+
+.carousel-container {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  margin: 0 auto;
+  border: #000000 solid;
+
+}
+
+.navigation-buttons .previous {
+  position: absolute;
+  z-index: 10;
+  font-size: 25px;
+  top: 40%;
+  left: 10px;
+  font-weight: 700;
+}
+
+.navigation-buttons .next {
+  right: 10px;
+  position: absolute;
+  font-size: 25px;
+  z-index: 10;
+  top: 40%;
+}
+
+.navigation-buttons .nav-btn {
+  background: rgba(255, 255, 255, 0.55);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.navigation .nav-btn:hover {
+  background: white;
+}
+
+.slider-carousel {
+  margin-top: 20px;
+  transition: all 0.3s ease;
+
+}
+.slider-carousel img {
+  width: 100%;
+  transition: all 0.3s ease;
+  border:8px solid white;
+}
+
+.images {
+  display: none;
+  margin-top: 7em;
+}
+
+.main {
+  display: block;
+}
+
+#ad2{
+  height: 19em;
+  margin: 1em 7em 1em 7em;
+  cursor: pointer;
+  transition: 0.5s;
+  border: transparent solid 2px;
+}
+
+#ad2:hover{
+  height: 19em;
+  margin: 1em 7em 1em 7em;
+  border: #000000 solid;
+  transform: scale(1.05);
+}
+
+#ad3{
+  width: 2000px;
+  height: 300px;
+}
+
+#stepping_image{
+  height: 60em;
+  border: #68925c solid;
+  border-width: 5px;
+  border-radius: 2em;
+}
+
+#destaques{
+
+  background-color: #F2EADA;
+  border-radius: 2em;
+  margin: 5em 5em 5em 5em;
+  padding: 3em 0em 1em 0em;
+}
+
+.produtos_destaques_conteiner{
+  padding: 1em;
+  border-radius: 1em;
+  transition: 0.5s;
+  border: transparent solid 2px;
+}
+
+.produtos_destaques_conteiner:hover{
+  transform: scale(1.05);
+  padding: 1em;
+  border: #b1abab solid;
+  border-radius: 1em;
+}
+
+
+#titulos{
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+#produtos_destaques{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0em 2em 0em;
+}
+
+#descontos{
+  background-color: #F2EADA;
+  background-image: url(./imagens_icones/discontos.png);
+  border-radius: 2em;
+  margin: 5em 5em 5em 5em;
+  padding: 4em 0em 1em 0em;
+}
+
+#produtos_discontos{
+  gap: 5em;
+  margin: 3em 10em 1em 10em;
+  padding: 2em 0em 2em 0em;
+}
+
+.produtos_disconto_conteiner{
+  padding: 1em;
+  border-radius: 1em;
+  transition: transform 0.5s, border 0.5s;
+  border: transparent solid 2px;
+}
+
+.produtos_disconto_conteiner:hover{
+  transform: scale(1.05); 
+  padding: 1em;
+  border-color: #b1abab;
+  border-width: 2px;
+  border-radius: 1em;
+}
+
+#produtos_discontos_div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.produtos_discontos_testo{
+  display: flex;
+  justify-content: space-between;
+}
+
+#stepping{
+  background-color: #F2EADA;
+  border-radius: 2em;
+  padding: 5em 6em 5em 5em;
+  margin: 3em 5em 5em 5em;
+}
+
+#produtos_stepping{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 2em;
+}
+
+#produtos_stepping_div{
+  display: flex;
+  margin-top: 4em;
+}
+
+#produtos_stepping_div_2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.produtos_stepping_conteiner{
+  padding: 1em;
+  border-radius: 1em;
+  transition: 0.5s;
+  border: transparent solid 2px;
+}
+
+.produtos_stepping_conteiner:hover{
+  transform: scale(1.05);
+  padding: 1em;
+  border: #b1abab solid;
+  border-radius: 1em;
+}
+
+#marcas{
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-around;
+  margin: 5em 0em 0em 0em;
+}
+
+.marcas_buttons{
+  background-color: #ffffff;
+}
+
+.marcas_logo{
+  max-width: 6em;
+  max-height: 6em;
+  background-color: #ffffff;
+}
+
+#produtos_all{
+
+  background-color: #F2EADA;
+  border-radius: 2em;
+  margin: 5em 5em 5em 5em;
+  padding: 2em;
+}
+
+#produtos_all_div{
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  margin: 5em;
+}
+
+.produtos_all_conteiner{
+  padding: 1em;
+  border-radius: 1em;
+  transition: 0.5s;
+  border: transparent solid 2px;
+}
+
+.produtos_all_conteiner:hover{
+  transform: scale(1.05);
+  padding: 1em;
+  border: #b1abab solid;
+  border-radius: 1em;
+}
+
+.tenis_nome{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+.tenis_preco{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5em;
+}
+
+.produtos{
+  max-width: 15em;
+  max-width: 15em;
+}
+
+.disconto{
+  max-width: 25em;
+  max-width: 25em;
+}
+
+.stepping{
+  max-width: 16em;
+  max-width: 16em;
+}
+
+#footer{
+  display: flex;
+  background-color: #e9dcc1;
+  padding: 1.5em;
+}
+
+#footer_2{
+  display: flex;
+  justify-content: center;
+  background-color: #F2EADA;
+  height: 20vh;
+}
+
+.testo{
+  margin-left: 8em;
+}
+
+#logo_end{
+  height: 20vh;
+}
